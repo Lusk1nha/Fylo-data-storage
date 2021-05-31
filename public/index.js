@@ -12,7 +12,6 @@ function progressRange() {
 
   usingStorage.innerHTML = storageBar.value + ' GB'
   gb_available.innerHTML = 1000 - storageBar.value
-
 }
 
 document.addEventListener('DOMContentLoaded', progressRange)

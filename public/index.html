@@ -4,28 +4,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="shortcut icon" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/main.css" />
+  <link rel="stylesheet" href="./styles/responsive.css" />
+
+
   <title>Frontend Mentor | Fylo data storage component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <main>
+    <div class="upload-container">
+      <img class="upload-logo" src="./assets/logo.svg" alt="brand logo" />
+    
+      <section class="upload-buttons">
+        <button class="button button--document" type="button">
+          <img class="button-image" src="./assets/icon-document.svg" alt="document icon">
+        </button>
 
-  You’ve used 815 GB of your storage
+        <button class="button button--folder" type="button">
+          <img class="button-image" src="./assets/icon-folder.svg" alt="folder icon">
+        </button>
 
-  185 GB Left
-  
-  0 GB
-  1000 GB
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+        <button class="button button--upload" type="button">
+          <img class="button-image" src="./assets/icon-upload.svg" alt="upload icon">
+        </button>
+      </section>
+    </div>
+
+    <div class="storage-container">
+      <p class="using-storage">
+        You've used <strong class="used-storage">815 GB</strong> of your storage
+      </p>
+
+      <div class="input-container">
+        <input class="input input--storage" type="range" aria-label="input storage" name="storage" value="815" min="0" max="1000" />
+        <div class="total-storage">
+          <h4>0 GB</h4>
+          <h4>1000 GB</h4>
+        </div>
+      </div>
+
+      <div class="storage-available">
+        <h1 class="gb-available">185</h1>
+        <h6>GB LEFT</h6>
+      </div>
+    </div>
+  </main>
+
+  <script src="./index.js"></script>
 </body>
 </html>

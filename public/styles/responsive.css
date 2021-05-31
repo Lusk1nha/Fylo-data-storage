@@ -1,0 +1,70 @@
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+@media (min-width: 700px) {
+  body::before {
+    background-image: url("../assets/bg-desktop.png");
+    height: 45%;
+    bottom: 0%;
+  }
+  main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: auto;
+    min-height: unset;
+  }
+  .upload-container {
+    max-width: 300px;
+  }
+  .storage-container {
+    max-width: 500px;
+    margin-left: 1.5rem;
+    padding: 3rem 2rem 2rem;
+  }
+  .storage-container p {
+    text-align: start !important;
+  }
+  .storage-container .storage-available {
+    top: -30px;
+    right: 2.5rem;
+    left: unset;
+    bottom: unset;
+  }
+  .storage-container .storage-available::after {
+    content: " ";
+    position: absolute;
+    right: -10px;
+    bottom: -8px;
+    border-top: 20px solid white;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-bottom: none;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
+@media (min-width: 1100px) {
+  body::before {
+    height: 60%;
+    bottom: -15%;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
